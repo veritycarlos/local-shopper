@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
-import AddBuisForm from './AddBuisForm'
+import NewDining from './NewDining';
+import AddBuisForm from './NewDining'
 
 function Dining() {
     const [dining, setDining] = useState([]);
@@ -22,7 +23,7 @@ function Dining() {
             {diningList}
             <br/>
             <br/>
-            <AddBuisForm />
+            <NewDining />
         </div>
     )
 }

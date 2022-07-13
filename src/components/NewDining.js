@@ -1,16 +1,20 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Switch } from 'react-router-dom'
+import DiningForm from './DiningForm';
 
-function AddBuisForm() {
+function NewDining() {
     return (
         <div>
+        
             <Link to={'/dining/new'} >
                 <button>Click Here to Add Your Buisness!</button>
             </Link>
+            <DiningForm />
+        
         </div>
     )
 }
 
-export default AddBuisForm;
+export default NewDining;
 
 // 
