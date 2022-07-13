@@ -2,7 +2,11 @@ import React from 'react';
 
 function Home() {
     return (
-        <h1>Home</h1>
+        <div>
+            <h1>Local Shopper</h1>
+            <hr/>
+            <p>This application displays local shops in Denton, Texas and the surrounding area</p>
+        </div>
     )
 }
 
