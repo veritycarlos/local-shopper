@@ -8,6 +8,8 @@ function DiningForm() {
         email: ""
     });
 
+    const [submitted, setSubmitted] = useState(false)
+
     const handleRepName = (event) => {
         setValues({...values, repName: event.target.value})
     }
@@ -20,28 +22,34 @@ function DiningForm() {
         setValues({...values, email: event.target.value})
     }
 
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        setSubmitted(true);
+    }
+
 
     return (
         <div className='form-container'>
-            <form className='register-form'>
-                <div className='sucess-message'>
-                    Success! Thank you for registering
-                </div>
+            <form className='register-form' onSubmit={handleSubmit}>
+                {submitted ? <div className='sucess-message'>Success! Thank you for registering</div> :null }
                 <input
                     className='form-field'
                     value={values.repName}
                     placeholder="Your Name" 
                     onChange={handleRepName}/>  
+                <span>Please enter a name</span>
                 <input
                     className='form-field'
                     value={values.buisnessName}
                     placeholder="Buisness Name"
                     onChange={handleBuisnessName} />
+                <span>Please enter a buisness name</span>
                 <input
                     className='form-field'
                     value={values.email}
                     placeholder="Buisness Email" 
-                    onChange={handleEmail}/>    
+                    onChange={handleEmail}/>  
+                <span>Please enter a email</span>  
             </form>
         </div>
     )
