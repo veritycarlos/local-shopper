@@ -3,7 +3,7 @@ import React from "react";
 // import Dining from "./Dining";
 // import Entertainment from "./Entertainment";
 // import Grocery from "./Grocery";
-import { BrowserRouter, Route, NavLink, Switch } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 /* Add basic styling for NavLinks */
 const linkStyles = {
