@@ -6,10 +6,10 @@ function Form(props) {
         ownerOrManager: "",
         buisnessName: "",
         email: "",
-        alcohol: "",
-        dogs: "",
-        website: "",
-        photo: ""
+        // alcohol: "",
+        // dogs: "",
+        // website: "",
+        // photo: ""
     });
 
     const [submitted, setSubmitted] = useState(false)
@@ -21,7 +21,7 @@ function Form(props) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if(!!values) {
+        if(values.ownerOrManager && values.buisnessName && values.email) {
             setValid(true);
         }
         setSubmitted(true);

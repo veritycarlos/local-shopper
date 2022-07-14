@@ -43,42 +43,66 @@
       "dogs": "No",
       "website": "https://palaks0217.wixsite.com/sangamindiandenton",
       "photo": "https://images.squarespace-cdn.com/content/v1/56aecaebc2ea51bdbdb55551/1533055891521-2UNUIR162AL0DVSGCCIU/IMGP1247.jpg"
+    }
+  ],
+  "entertainment": [
+    {
+      "id": 1,
+      "name": "Free Play",
+      "type": "Entertainment",
+      "alcohol": "yes",
+      "website": "https://freeplaydenton.com/"
     },
     {
-      "buisnessName": "PB&J ",
-      "ownerOrManager": "",
-      "email": "veritypbj@yehaww.com",
-      "id": 5
+      "id": 2,
+      "name": "EastSide",
+      "type": "Entertainment",
+      "alcohol": "yes",
+      "website": "http://eastsidedenton.com/"
     },
     {
-      "buisnessName": "ddd",
-      "ownerOrManager": "",
-      "email": "lkj@lj",
-      "id": 6
+      "id": 3,
+      "name": "OakStreet",
+      "type": "Entertainment",
+      "alcohol": "yes",
+      "website": "https://oakstreetdrafthouse.com/"
     },
     {
-      "buisnessName": "ddd",
-      "ownerOrManager": "",
-      "email": "ddd",
-      "id": 7
+      "id": 4,
+      "name": "d20Tavern",
+      "type": "Entertainment",
+      "alcohol": "yes",
+      "website": "https://d20tavern.com/"
+    }
+  ],
+  "grocery": [
+    {
+      "id": 1,
+      "name": "Naturally Grown Farms",
+      "type": "Grocery",
+      "alcohol": "no",
+      "website": "https://www.naturallygrownfarms.com/"
     },
     {
-      "buisnessName": "me",
-      "ownerOrManager": "",
-      "email": "aa",
-      "id": 8
+      "id": 2,
+      "name": "Circle N' Dairy",
+      "type": "Grocery",
+      "alcohol": "no",
+      "website": "https://www.circlendairy.com/"
     },
     {
-      "buisnessName": "holy",
-      "ownerOrManager": "",
-      "email": "issue@lkadf",
-      "id": 9
+      "id": 3,
+      "name": "Denton Community Market",
+      "type": "Grocery",
+      "alcohol": "no",
+      "website": "https://www.dentonmarket.org/"
     },
     {
-      "buisnessName": "d",
-      "ownerOrManager": "",
-      "email": "d",
-      "id": 10
+      "id": 4,
+      "name": "Mashup Market",
+      "type": "Grocery",
+      "alcohol": "unknown",
+      "website": "https://mashupmarketandgrocery.com/"
     }
   ]
 }

@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
-import  NewBuisness from './NewBuisness'
+import NewBuisness from './NewBuisness'
+import BuisnessLink from './BuisnessLink';
 
 function Dining() {
     const [dining, setDining] = useState([]);
@@ -8,12 +9,11 @@ function Dining() {
         fetch("http://localhost:3001/dining")
         .then(res => res.json())
         .then(data => {
-            console.log(data)
             setDining(data)
         })
     }, [])
 
-    const diningList = dining.map(dining => <li>{dining.buisnessName}</li>)
+    const diningList = dining.map(d => <BuisnessLink restaurant={d} />)
 
     return (
         <div>

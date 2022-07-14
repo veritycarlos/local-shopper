@@ -28,6 +28,7 @@ function NavBar() {
       >
         Home
       </NavLink>
+      <br/>
       <NavLink
         to="/dining"
         exact
