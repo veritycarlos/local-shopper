@@ -37,19 +37,22 @@ function DiningForm() {
                     value={values.repName}
                     placeholder="Your Name" 
                     onChange={handleRepName}/>  
-                <span>Please enter a name</span>
+                {submitted && !values.repName ? <span>Please enter a name</span> : null}
                 <input
                     className='form-field'
                     value={values.buisnessName}
                     placeholder="Buisness Name"
                     onChange={handleBuisnessName} />
-                <span>Please enter a buisness name</span>
+                {submitted && !values.buisnessName ? <span>Please enter a buisness name</span> : null}
                 <input
                     className='form-field'
                     value={values.email}
                     placeholder="Buisness Email" 
                     onChange={handleEmail}/>  
-                <span>Please enter a email</span>  
+                {submitted && !values.email ? <span>Please enter a email</span> : null}
+                <button
+                    className='form-field'
+                    type="submit">Register</button>
             </form>
         </div>
     )
