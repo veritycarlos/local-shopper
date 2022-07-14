@@ -13,9 +13,12 @@ const MyProvider = (props) => {
         })
     }, [])
 
+    const addRestaurant = (restaurant) => {
+        setDining([...dining, restaurant])
+    }
 
     return (<MyContext.Provider value={{
-        dining: dining
+            dining: dining
         }}>
             {props.children}
         </MyContext.Provider>
