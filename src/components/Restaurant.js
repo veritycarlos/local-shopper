@@ -5,6 +5,7 @@ function Restaurant(props) {
     return (
         <MyConsumer>
             { context => {
+                const restaurant = context.dining.find((d) => d.id ==props.match.params.id )
 
                 return (
                     <div>
@@ -20,15 +21,3 @@ function Restaurant(props) {
 }
 
 export default Restaurant;
-
-
-{/* useEffect
-(() =>{ */}
-        
-        {/* //     fetch(`http://localhost:3001/dining/${props.match.params.id}`)
-        //     .then(res => res.json())
-        //     .then(data => { */}
-        {/* //         console.log(data)
-        //         setRestaurant(data)
-        //     })
-        // }, []) */}
