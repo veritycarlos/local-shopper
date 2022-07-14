@@ -1,92 +1,84 @@
 {
-      "entertainment": [
-      {
-        "id": 1,
-        "name": "Free Play",
-        "type": "Entertainment",
-        "alcohol": "yes",
-        "website": "https://freeplaydenton.com/"
-      },
-      {
-        "id": 2,
-        "name": "EastSide",
-        "type": "Entertainment",
-        "alcohol": "yes",
-        "website": "http://eastsidedenton.com/"
-      },
-      {
-        "id": 3,
-        "name": "OakStreet",
-        "type": "Entertainment",
-        "alcohol": "yes",
-        "website": "https://oakstreetdrafthouse.com/"
-      },
-      {
-        "id": 4,
-        "name": "d20Tavern",
-        "type": "Entertainment",
-        "alcohol": "yes",
-        "website": "https://d20tavern.com/"
-      }
-    ],
-    "grocery": [
-      {
-        "id": 1,
-        "name": "Naturally Grown Farms",
-        "type": "Grocery",
-        "alcohol": "no",
-        "website": "https://www.naturallygrownfarms.com/"
-      },
-      {
-        "id": 2,
-        "name": "Circle N' Dairy",
-        "type": "Grocery",
-        "alcohol": "no",
-        "website": "https://www.circlendairy.com/"
-      },
-      {
-        "id": 3,
-        "name": "Denton Community Market",
-        "type": "Grocery",
-        "alcohol": "no",
-        "website": "https://www.dentonmarket.org/"
-      },
-      {
-        "id": 4,
-        "name": "Mashup Market",
-        "type": "Grocery",
-        "alcohol": "unknown",
-        "website": "https://mashupmarketandgrocery.com/"
-      }
-    ],
-    "dining": [
-      {
-        "id": 1,
-        "name": "Osteria Il Muro",
-        "type": "Dining",
-        "alcohol": "yes",
-        "website": "https://www.osteriamuro.com/"
-      },
-      {
-        "id": 2,
-        "name": "Greenhouse Restaurang & Bar",
-        "type": "Dining",
-        "alcohol": "yes",
-        "website": "http://www.greenhouserestaurantdenton.com/"
-      },
-      {
-        "id": 3,
-        "name": "Yummy's Greek",
-        "type": "Dining",
-        "alcohol": "no",
-        "website": "https://yummysgreek.com/"
-      },
-      {
-        "id": 4,
-        "name": "Sangam Indian Restaurant",
-        "type": "Dining",
-        "alcohol": "no",
-        "website": "https://www.facebook.com/SangamIndianRestaurant"
-      }
-    ]
-  }
+  "dining": [
+    {
+      "id": 1,
+      "type": "Dining",
+      "buisnessName": "Hoger's Pasta Palace",
+      "ownerOrManager": "James Hoger",
+      "email": "info@osteriamuro.com",
+      "alcohol": "Yes",
+      "dogs": "No",
+      "website": "https://www.osteriamuro.com/",
+      "photo": "https://bloximages.newyork1.vip.townnews.com/dentonrc.com/content/tncms/assets/v3/editorial/4/b2/4b22f1e5-c90c-5c9d-9719-64d69adbd41a/61e1dde0d399f.image.jpg?resize=651%2C500"
+    },
+    {
+      "id": 2,
+      "type": "Dining",
+      "buisnessName": "Greenhouse Restaurang & Bar",
+      "ownerOrManager": "Ms. Green",
+      "email": "greenhousedenton@gmail.com",
+      "alcohol": "Yes",
+      "dogs": "Patio",
+      "website": "http://www.greenhouserestaurantdenton.com/",
+      "photo": "https://images.squarespace-cdn.com/content/v1/56aa7fbb3c44d876d31e490d/1468892367082-EETSLYAVS1FRYH58GWFO/GardenRoom?format=1000w"
+    },
+    {
+      "id": 3,
+      "type": "Dining",
+      "buisnessName": "Yummy's Greek",
+      "ownerOrManager": "Mr. Yummy",
+      "email": "yummygreekfood@yummy.com",
+      "alcohol": "No",
+      "dogs": "No",
+      "website": "https://yummysgreek.com/",
+      "photo": "https://www.yummysgreekfood.com/static/ae596f4794ff5df820705834ae53cca4/7a84a/AF1QipM8VgmTrHnNckr8VsbMG8oDwHZZSS9pJFGV--Shs1600-w1600-h1224.jpg"
+    },
+    {
+      "id": 4,
+      "type": "Dining",
+      "buisnessName": "Sangam Indian Restaurant",
+      "ownerOrManager": "d",
+      "email": "sangam@dentoneatery.com",
+      "alcohol": "No",
+      "dogs": "No",
+      "website": "https://palaks0217.wixsite.com/sangamindiandenton",
+      "photo": "https://images.squarespace-cdn.com/content/v1/56aecaebc2ea51bdbdb55551/1533055891521-2UNUIR162AL0DVSGCCIU/IMGP1247.jpg"
+    },
+    {
+      "buisnessName": "PB&J ",
+      "ownerOrManager": "",
+      "email": "veritypbj@yehaww.com",
+      "id": 5
+    },
+    {
+      "buisnessName": "ddd",
+      "ownerOrManager": "",
+      "email": "lkj@lj",
+      "id": 6
+    },
+    {
+      "buisnessName": "ddd",
+      "ownerOrManager": "",
+      "email": "ddd",
+      "id": 7
+    },
+    {
+      "buisnessName": "me",
+      "ownerOrManager": "",
+      "email": "aa",
+      "id": 8
+    },
+    {
+      "buisnessName": "holy",
+      "ownerOrManager": "",
+      "email": "issue@lkadf",
+      "id": 9
+    },
+    {
+      "buisnessName": "d",
+      "ownerOrManager": "",
+      "email": "d",
+      "id": 10
+    }
+  ]
+}

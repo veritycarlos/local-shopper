@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import NewDining from './NewDining';
-import AddBuisForm from './NewDining'
+import  NewBuisness from './NewBuisness'
 
 function Dining() {
     const [dining, setDining] = useState([]);
@@ -14,7 +13,7 @@ function Dining() {
         })
     }, [])
 
-    const diningList = dining.map(dining => <li>{dining.name}</li>)
+    const diningList = dining.map(dining => <li>{dining.buisnessName}</li>)
 
     return (
         <div>
@@ -23,7 +22,7 @@ function Dining() {
             {diningList}
             <br/>
             <br/>
-            <NewDining />
+            <NewBuisness />
         </div>
     )
 }
