@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/App";
 import { MyProvider } from './components/MyContext'
-import "./index.css";
+// import "./index.css";
 
 ReactDOM.render(
     <MyProvider>

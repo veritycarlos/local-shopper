@@ -1,66 +1,80 @@
-import React from "react";
-// import ReactDOM from "react-dom";
-// import Dining from "./Dining";
-// import Entertainment from "./Entertainment";
-// import Grocery from "./Grocery";
+import React, {useState} from "react";
 import { NavLink } from "react-router-dom";
-
-const linkStyles = {
-  display: "inline-block",
-  width: "50px",
-  padding: "12px",
-  margin: "0 6px 6px",
-  background: "blue",
-  textDecoration: "none",
-  color: "white",
-};
+import './Navbar.css'
 
 function NavBar() {
+    const [active, setActive] = useState('nav_menu')
+    const [toggleIcon, setToggleIcon] = useState("nav_toggler");
+    const navToggle = () => {
+      active === 'nav_menu' ? setActive('nav_menu nav_active') : setActive('nav_menu');
+    
+      //TogglerIcon
+
+      toggleIcon === 'nav_toggler' ? setToggleIcon('nav_toggler toggle') : setToggleIcon('nav_toggler');
+    
+    }
+
   return (
-    <div>
-      <NavLink
-        to="/"
-        exact
-        style={linkStyles}
-        activeStyle={{
-          background: "darkblue",
-        }}
-      >
-        Home
+    <nav className="nav">
+      <NavLink className="nav_brand" to="/" exact >
+        LS|TX
       </NavLink>
-      <br/>
-      <NavLink
-        to="/dining"
-        exact
-        style={linkStyles}
-        activeStyle={{
-          background: "darkblue",
-        }}
-      >
-        Dining
-      </NavLink>
-      <NavLink
-        to="/grocery"
-        exact
-        style={linkStyles}
-        activeStyle={{
-          background: "darkblue",
-        }}
-      >
-        Grocery
-      </NavLink>
-      <NavLink
-        to="/entertainment"
-        exact
-        style={linkStyles}
-        activeStyle={{
-          background: "darkblue",
-        }}
-      >
-        Entertainment
-      </NavLink>
-    </div>
+      <ul className={active}>
+
+        <li className="nav_item">
+          <NavLink className="nav_link" to="/" exact >Home</NavLink>
+        </li>
+
+        <br/>
+
+        <li className="nav_item">          
+          <NavLink className="nav_link" to="/dining" exact >Dining</NavLink>
+        </li>  
+
+        <br/>
+
+        <li className="nav_item">   
+          <NavLink className="nav_link" to="/grocery" exact >Grocery</NavLink>
+        </li>  
+
+        <br/>
+
+        <li className="nav_item">   
+          <NavLink className="nav_link" to="/entertainment" exact >Entertainment</NavLink>
+        </li>  
+
+        <li className="nav_item"> 
+          <NavLink className="nav_link" to={'/dining/new'} >
+            <button className="button">Add Your Buisness!</button>
+          </NavLink>
+        </li>
+
+      </ul>
+      <div onClick = {navToggle} className={toggleIcon}>
+        <div className="line1"></div>
+        <div className="line2"></div>
+        <div className="line3"></div>
+      </div>
+    </nav>
   );
 }
 
 export default NavBar
+
+{/* <NavLink className="Buttons" to="/" exact >
+Home
+</NavLink>
+
+
+<NavLink className="Buttons" to="/dining" exact >
+Dining
+</NavLink>
+
+
+<NavLink className="Buttons" to="/grocery" exact >
+Grocery
+</NavLink>
+
+<NavLink className="Buttons"to="/entertainment" exact >
+Entertainment
+</NavLink> */}

@@ -19,8 +19,6 @@ function Form(props) {
             { context => {
 
 
-
-
             const handleChange = (e) => {
                 setValues({...values, [e.target.name]: e.target.value})
             }
@@ -46,6 +44,7 @@ function Form(props) {
                 .then(r => r.json())
                 .then(data => {
                     console.log(data)
+                    context.addRestaurant(data)
                     props.history.push('/dining')
                 })
             }

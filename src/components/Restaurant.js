@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { MyConsumer } from './MyContext';
 
 function Restaurant(props) {
     return (
         <MyConsumer>
             { context => {
-                const restaurant = context.dining.find((d) => d.id ==props.match.params.id )
+                const restaurant = context.dining.find((d) => d.id === props.match.params.id )
 
                 return (
                     <div>
