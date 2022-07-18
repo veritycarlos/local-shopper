@@ -13,29 +13,18 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-function DiningList() {
+function DiningList({dining}) {
+    const diningCards = dining.map(diner => (
+        <Grid key={ diner.id } item xs={3}>
+            <Item><DiningCard diner={ diner } /></Item>
+        </Grid>
+    ) )
     return (
         <Box style={{ marginTop: "20px"}}>
-        <Grid container spacing={2}>
-            <Grid item xs={3}>
-                <Item><DiningCard /> </Item>
+            <Grid container spacing={2}>
+                { diningCards }              
             </Grid>
-            <Grid item xs={3}>
-                <Item><DiningCard /> </Item>
-            </Grid>
-            <Grid item xs={3}>
-                <Item><DiningCard /> </Item>
-            </Grid>
-            <Grid item xs={3}>
-                <Item><DiningCard /> </Item>
-            </Grid>
-            <Grid item xs={3}>
-                <Item><DiningCard /> </Item>
-            </Grid>
-        </Grid>
-
-       
-    </Box>
+        </Box>
     )
 }
 

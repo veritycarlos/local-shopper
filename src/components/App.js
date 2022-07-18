@@ -3,23 +3,25 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Home from './Home';
 // import Dining from './Dining';
-import Restaurant from './Restaurant';
+// import Restaurant from './Restaurant';
 import Grocery from './Grocery';
 import About from './About';
 import Entertainment from './Entertainment';
 import NavBar from './NavBar';
 import { baseUrl } from './Globals';
-import Form from './Form'
+// import Form from './Form'
 import DiningList from './localb/DiningList';
 
 function App() {
-  const [diningList, setDiningList] = useState([]);
+  const [dining, setDining] = useState([]);
 
   useEffect(() => {
-    fetch(baseUrl + "/dininglist")
+    fetch(baseUrl + "/dining")
     .then(resp => resp.json())
-    .then(data => setDiningList(data))
+    .then(data => setDining(data))
   }, [])
+
+  console.log(dining)
 
   return (
     <Router className="app">
@@ -28,13 +30,13 @@ function App() {
          <Switch>
          
           <Route exact path = "/" >{<Home/>}</Route>
-          <Route exact path = "/dininglist" >{<DiningList address="db.json.address"/>}</Route>
+          <Route exact path = "/dining" >{<DiningList dining ={dining}/>}</Route>
           {/* <Route exact path = "/dining"  component={Dining} /> */}
-          <Route exact path = "/dining/new" >{<Form />}</Route>
+          {/* <Route exact path = "/dining/new" >{<Form />}</Route> */}
           <Route exact path = "/entertainment" >{<Entertainment />}</Route>
           <Route exact path = "/grocery" >{<Grocery />}</Route>
           <Route exact path = "/about" >{<About />}</Route>
-          <Route path="/dining/:id" >{<Restaurant />}</Route>
+          {/* <Route path="/dining/:id" >{<Restaurant />}</Route> */}
           </Switch>
         </div>
      
