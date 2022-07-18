@@ -1,6 +1,11 @@
 import React, {useState} from "react";
 import { NavLink } from "react-router-dom";
 import './Navbar.css'
+// import  AppBar  from "@mui/material";
+// import Box from "@mui/material";
+// import Toolbar from "@mui/material";
+// import Typography from "@mui/material";
+
 
 function NavBar() {
     const [active, setActive] = useState('nav_menu')
@@ -15,14 +20,22 @@ function NavBar() {
     }
 
   return (
+    
     <nav className="nav">
+
       <NavLink className="nav_brand" to="/" exact >
-        LS|TX
+        LOCAL SHOPPER | TX
       </NavLink>
       <ul className={active}>
 
+        <br/>
+
         <li className="nav_item">
           <NavLink className="nav_link" to="/" exact >Home</NavLink>
+        </li>
+
+        <li className="nav_item">
+          <NavLink className="nav_link" to="/about" exact >About</NavLink>
         </li>
 
         <br/>
@@ -43,11 +56,15 @@ function NavBar() {
           <NavLink className="nav_link" to="/entertainment" exact >Entertainment</NavLink>
         </li>  
 
+        <br/>
+
         <li className="nav_item"> 
           <NavLink className="nav_link" to={'/dining/new'} >
             <button className="button">Add Your Buisness!</button>
           </NavLink>
         </li>
+
+        <br/>
 
       </ul>
       <div onClick = {navToggle} className={toggleIcon}>
@@ -56,25 +73,8 @@ function NavBar() {
         <div className="line3"></div>
       </div>
     </nav>
+    
   );
 }
 
 export default NavBar
-
-{/* <NavLink className="Buttons" to="/" exact >
-Home
-</NavLink>
-
-
-<NavLink className="Buttons" to="/dining" exact >
-Dining
-</NavLink>
-
-
-<NavLink className="Buttons" to="/grocery" exact >
-Grocery
-</NavLink>
-
-<NavLink className="Buttons"to="/entertainment" exact >
-Entertainment
-</NavLink> */}
