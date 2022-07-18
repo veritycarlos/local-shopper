@@ -6,40 +6,38 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-function DiningCard({ diner }) {
+function EntertainmentCard({ fun }) {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
         height="140"
-        image={diner.photo}
-        alt="Restaurant Picture"
+        image={fun.photo}
+        alt="Entertainment Buisness Picture"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          { diner.buisnessName }
+          { fun.buisnessName }
         </Typography>
         <Typography variant="body2" color="text.secondary" fontSize={15}>
-            {diner.cuisine}<br/>
-            {diner.addressline1}<br/>
-            {diner.addressline2}<br/>
-            {diner.phone}<br/>
+            {fun.funType}<br/>
+            {fun.addressline1}<br/>
+            {fun.addressline2}<br/>
+            {fun.phone}<br/>
         </Typography>
         <Typography variant="body2" fontSize={23}>   
-            { diner.alcohol ?  "🥂" : null } 
-            { diner.patio ? "🪑":null }
-            { diner.dogs ? "🐕" : null }
-            { diner.vegan ? "🌱" : null }
-            { diner.vegetarian ? "🧀" : null }
+            { fun.alcohol ?  "🥂" : null } 
+            { fun.patio ? "🪑":null }
+            { fun.dogs ? "🐕" : null }
         </Typography>     
         
       </CardContent>
       <CardActions >
-        <Button size="large"><a href={diner.website} target="_blank">website</a></Button>
+        <Button size="large"><a href={fun.website} target="_blank">website</a></Button>
         {/* <Button size="large">Learn More</Button> */}
       </CardActions>
     </Card>
   );
 }
 
-export default DiningCard; 
+export default EntertainmentCard; 

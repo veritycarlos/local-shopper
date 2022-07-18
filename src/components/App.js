@@ -6,7 +6,7 @@ import Home from './Home';
 // import Restaurant from './Restaurant';
 import Grocery from './Grocery';
 import About from './About';
-import Entertainment from './Entertainment';
+import EntertainmentList from './localb/EntertainmentList';
 import NavBar from './NavBar';
 import { baseUrl } from './Globals';
 // import Form from './Form'
@@ -14,6 +14,7 @@ import DiningList from './localb/DiningList';
 
 function App() {
   const [dining, setDining] = useState([]);
+  const [entertainment, setEntertainment] = useState([]);
 
   useEffect(() => {
     fetch(baseUrl + "/dining")
@@ -21,7 +22,12 @@ function App() {
     .then(data => setDining(data))
   }, [])
 
-  console.log(dining)
+  useEffect(() => {
+    fetch(baseUrl + "/entertainment")
+    .then(resp => resp.json())
+    .then(data => setEntertainment(data))
+  })
+
 
   return (
     <Router className="app">
@@ -31,9 +37,7 @@ function App() {
          
           <Route exact path = "/" >{<Home/>}</Route>
           <Route exact path = "/dining" >{<DiningList dining ={dining}/>}</Route>
-          {/* <Route exact path = "/dining"  component={Dining} /> */}
-          {/* <Route exact path = "/dining/new" >{<Form />}</Route> */}
-          <Route exact path = "/entertainment" >{<Entertainment />}</Route>
+          <Route exact path = "/entertainment" >{<EntertainmentList entertainment={entertainment} />}</Route>
           <Route exact path = "/grocery" >{<Grocery />}</Route>
           <Route exact path = "/about" >{<About />}</Route>
           {/* <Route path="/dining/:id" >{<Restaurant />}</Route> */}
@@ -45,3 +49,6 @@ function App() {
 }
 
 export default App;
+
+          // {/* <Route exact path = "/dining"  component={Dining} /> */}
+          // {/* <Route exact path = "/dining/new" >{<Form />}</Route> */}
