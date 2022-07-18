@@ -155,31 +155,59 @@
   "grocery": [
     {
       "id": 1,
-      "name": "Naturally Grown Farms",
       "type": "Grocery",
-      "alcohol": "no",
-      "website": "https://www.naturallygrownfarms.com/"
+      "foodType": "Dairy, Produce, Meat",
+      "name": "Naturally Grown Farms",
+      "ownerOrManager": "Maggie",
+      "email": "naturallygrownfarmsfood@foodmail.com",
+      "addressline1":"100 E. North St.",
+      "addressline2": "Argyle, TX 76239", 
+      "alcohol": false,
+      "phone": "(940) 435-0404",
+      "website": "https://www.naturallygrownfarms.com/",
+      "photo": "https://static.wixstatic.com/media/nsplsh_3347534c56455465435277~mv2_d_4896_3264_s_4_2.jpg/v1/fill/w_964,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/nsplsh_3347534c56455465435277~mv2_d_4896_3264_s_4_2.jpg"
     },
     {
       "id": 2,
-      "name": "Circle N' Dairy",
       "type": "Grocery",
-      "alcohol": "no",
-      "website": "https://www.circlendairy.com/"
+      "foodType": "Dairy",
+      "name": "Circle N' Dairy",
+      "ownerOrManager": "Maple",
+      "email": "circledairy@foodmail.com",
+      "addressline1":"200 E. North St.",
+      "addressline2": "Gainsville, TX 76239", 
+      "alcohol": false,
+      "phone": "(940) 555-5555",
+      "website": "https://www.circlendairy.com/",
+      "photo": "http://www.circlendairy.com/wp-content/uploads/2020/01/Market-Days-1-1200x1600.jpg"
     },
     {
       "id": 3,
-      "name": "Denton Community Market",
       "type": "Grocery",
-      "alcohol": "no",
-      "website": "https://www.dentonmarket.org/"
+      "foodType": "Produce",
+      "name": "Denton Community Farmers Market",
+      "ownerOrManager": "City of Denton",
+      "email": "dentonmarket@dentonmail.com",
+      "addressline1":"300 E. North St.",
+      "addressline2": "Denton, TX 76239", 
+      "alcohol": false,
+      "phone": "(940) 666-6666",
+      "website": "https://www.dentonmarket.org/",
+      "photo":"https://s3-media0.fl.yelpcdn.com/bphoto/Ibz4JEt3QPIG5wIeixuQJw/348s.jpg"
     },
     {
       "id": 4,
-      "name": "Mashup Market",
       "type": "Grocery",
-      "alcohol": "unknown",
-      "website": "https://mashupmarketandgrocery.com/"
+      "foodType": "Vegan, Gluten Free, Specialty",
+      "name": "Mashup Market & Grocery",
+      "ownerOrManager": "Mash",
+      "email": "mashmark@mashmail.com",
+      "addressline1":"2300 E. North St.",
+      "addressline2": "Denton, TX 76239", 
+      "alcohol": false,
+      "phone": "(940) 777-7777",
+      "website": "https://mashupmarketandgrocery.com/",
+      "photo":"https://assets.simpleviewinc.com/simpleview/image/upload/crm/denton/Mashup-Market_20CF242C-5056-A348-3A9081B218596BEC-20cf23255056a34_20cf24c2-5056-a348-3a611050a5e4001e.jpg"
     }
   ]
 }

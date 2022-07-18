@@ -4,7 +4,7 @@ import './App.css';
 import Home from './Home';
 // import Dining from './Dining';
 // import Restaurant from './Restaurant';
-import Grocery from './Grocery';
+import GroceryList from './localb/GroceryList';
 import About from './About';
 import EntertainmentList from './localb/EntertainmentList';
 import NavBar from './NavBar';
@@ -15,6 +15,7 @@ import DiningList from './localb/DiningList';
 function App() {
   const [dining, setDining] = useState([]);
   const [entertainment, setEntertainment] = useState([]);
+  const [grocery, setGrocery] = useState([]);
 
   useEffect(() => {
     fetch(baseUrl + "/dining")
@@ -28,6 +29,12 @@ function App() {
     .then(data => setEntertainment(data))
   })
 
+  useEffect(() => {
+    fetch(baseUrl + "/grocery")
+    .then(resp => resp.json())
+    .then(data => setGrocery(data))
+  })
+
 
   return (
     <Router className="app">
@@ -38,7 +45,7 @@ function App() {
           <Route exact path = "/" >{<Home/>}</Route>
           <Route exact path = "/dining" >{<DiningList dining ={dining}/>}</Route>
           <Route exact path = "/entertainment" >{<EntertainmentList entertainment={entertainment} />}</Route>
-          <Route exact path = "/grocery" >{<Grocery />}</Route>
+          <Route exact path = "/grocery" >{<GroceryList grocery={grocery} />}</Route>
           <Route exact path = "/about" >{<About />}</Route>
           {/* <Route path="/dining/:id" >{<Restaurant />}</Route> */}
           </Switch>
