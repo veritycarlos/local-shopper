@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function BuisnessLink({restaurant}) {
+function DiningLink({restaurant}) {
     return (
         <>
             <Link to={`/dining/${restaurant.id}`}>
@@ -13,4 +13,4 @@ function BuisnessLink({restaurant}) {
     )
 }
 
-export default BuisnessLink
+export default DiningLink

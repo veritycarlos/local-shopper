@@ -5,6 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { Link } from 'react-router-dom'
 
 function EntertainmentCard({ fun }) {
   return (
@@ -34,7 +35,7 @@ function EntertainmentCard({ fun }) {
       </CardContent>
       <CardActions >
         <Button size="large"><a href={fun.website} target="_blank">website</a></Button>
-        {/* <Button size="large">Learn More</Button> */}
+        <Button size="large"><Link to={`/entertainment/${fun.id}`}>Learn More</Link></Button>
       </CardActions>
     </Card>
   );

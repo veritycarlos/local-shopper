@@ -5,6 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { Link } from 'react-router-dom'
 
 function DiningCard({ diner }) {
   return (
@@ -36,7 +37,7 @@ function DiningCard({ diner }) {
       </CardContent>
       <CardActions >
         <Button size="large"><a href={diner.website} target="_blank">website</a></Button>
-        {/* <Button size="large">Learn More</Button> */}
+        <Button size="large"><Link to={`/dining/${diner.id}`}>Learn More</Link></Button>
       </CardActions>
     </Card>
   );

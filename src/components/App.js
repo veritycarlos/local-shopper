@@ -1,16 +1,17 @@
 import React, {useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { baseUrl } from './Globals';
 import './App.css';
+import NavBar from './NavBar';
 import Home from './Home';
+import About from './About';
 // import Dining from './Dining';
 // import Restaurant from './Restaurant';
 import GroceryList from './localb/GroceryList';
-import About from './About';
 import EntertainmentList from './localb/EntertainmentList';
-import NavBar from './NavBar';
-import { baseUrl } from './Globals';
-// import Form from './Form'
 import DiningList from './localb/DiningList';
+// import Form from './Form'
+
 
 function App() {
   const [dining, setDining] = useState([]);
@@ -41,7 +42,6 @@ function App() {
         <NavBar />
         <div>
          <Switch>
-         
           <Route exact path = "/" >{<Home/>}</Route>
           <Route exact path = "/dining" >{<DiningList dining ={dining}/>}</Route>
           <Route exact path = "/entertainment" >{<EntertainmentList entertainment={entertainment} />}</Route>
@@ -50,7 +50,6 @@ function App() {
           {/* <Route path="/dining/:id" >{<Restaurant />}</Route> */}
           </Switch>
         </div>
-     
     </Router>
   );
 }
