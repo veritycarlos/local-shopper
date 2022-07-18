@@ -34,6 +34,8 @@ function NavBar() {
           <NavLink className="nav_link" to="/" exact >Home</NavLink>
         </li>
 
+        <br/>
+
         <li className="nav_item">
           <NavLink className="nav_link" to="/about" exact >About</NavLink>
         </li>
@@ -56,15 +58,15 @@ function NavBar() {
           <NavLink className="nav_link" to="/entertainment" exact >Entertainment</NavLink>
         </li>  
 
-        <br/>
-
+        {/* <br/> */}
+{/* 
         <li className="nav_item"> 
-          <NavLink className="nav_link" to={'/dining/new'} >
-            <button className="button">Add Your Buisness!</button>
+          <NavLink className="nav_link" to='/form' exact >
+            Add Your Buisness!
           </NavLink>
         </li>
 
-        <br/>
+        <br/> */}
 
       </ul>
       <div onClick = {navToggle} className={toggleIcon}>

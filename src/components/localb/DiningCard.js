@@ -7,8 +7,10 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Link } from 'react-router-dom'
 
+
 function DiningCard({ diner }) {
   return (
+    <>
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
@@ -18,10 +20,10 @@ function DiningCard({ diner }) {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          { diner.buisnessName }
+          { diner.name }
         </Typography>
         <Typography variant="body2" color="text.secondary" fontSize={15}>
-            {diner.cuisine}<br/>
+            {diner.specialty}<br/>
             {diner.addressline1}<br/>
             {diner.addressline2}<br/>
             {diner.phone}<br/>
@@ -37,9 +39,10 @@ function DiningCard({ diner }) {
       </CardContent>
       <CardActions >
         <Button size="large"><a href={diner.website} target="_blank">website</a></Button>
-        <Button size="large"><Link to={`/dining/${diner.id}`}>Learn More</Link></Button>
+        {/* <Button size="large"><Link to={`/dining/${diner.id}`}>Learn More</Link></Button> */}
       </CardActions>
     </Card>
+    </>
   );
 }
 

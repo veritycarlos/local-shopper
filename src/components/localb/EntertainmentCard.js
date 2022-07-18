@@ -18,10 +18,10 @@ function EntertainmentCard({ fun }) {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          { fun.buisnessName }
+          { fun.name }
         </Typography>
         <Typography variant="body2" color="text.secondary" fontSize={15}>
-            {fun.funType}<br/>
+            {fun.specialty}<br/>
             {fun.addressline1}<br/>
             {fun.addressline2}<br/>
             {fun.phone}<br/>
@@ -35,7 +35,7 @@ function EntertainmentCard({ fun }) {
       </CardContent>
       <CardActions >
         <Button size="large"><a href={fun.website} target="_blank">website</a></Button>
-        <Button size="large"><Link to={`/entertainment/${fun.id}`}>Learn More</Link></Button>
+        {/* <Button size="large"><Link to={`/entertainment/${fun.id}`}>Learn More</Link></Button> */}
       </CardActions>
     </Card>
   );

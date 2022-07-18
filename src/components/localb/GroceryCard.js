@@ -21,7 +21,7 @@ function GroceryCard({ food }) {
           { food.name }
         </Typography>
         <Typography variant="body2" color="text.secondary" fontSize={15}>
-            {food.foodType}<br/>
+            {food.specialty}<br/>
             {food.addressline1}<br/>
             {food.addressline2}<br/>
             {food.phone}<br/>
@@ -33,7 +33,7 @@ function GroceryCard({ food }) {
       </CardContent>
       <CardActions >
         <Button size="large"><a href={food.website} target="_blank">website</a></Button>
-        <Button size="large"><Link to={`/grocery/${food.id}`}>Learn More</Link></Button>
+        {/* <Button size="large"><Link to={`/grocery/${food.id}`}>Learn More</Link></Button> */}
       </CardActions>
     </Card>
   );
