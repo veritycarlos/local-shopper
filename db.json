@@ -75,25 +75,6 @@
       "vegan": true,
       "website": "https://palaks0217.wixsite.com/sangamindiandenton",
       "photo": "https://images.squarespace-cdn.com/content/v1/56aecaebc2ea51bdbdb55551/1533055891521-2UNUIR162AL0DVSGCCIU/IMGP1247.jpg"
-    },
-    {
-      "type": "",
-      "owner": "Gian",
-      "name": "MTG",
-      "email": "mtg@mtg.mtg",
-      "addressline1": "100 mtg ln.",
-      "addressline2": "Seattle, WA 50741",
-      "phone": "940-456-1234",
-      "website": "https://company.wizards.com/en",
-      "photo": "https://cdn.wccftech.com/wp-content/uploads/2019/04/Wizards_of_the_Coast_logo.jpg",
-      "bio": "We sell magic cards!",
-      "specialty": "Magic the Gathering",
-      "alcohol": "",
-      "dogs": "",
-      "patio": "",
-      "vegetarian": "",
-      "vegan": "",
-      "id": 5
     }
   ],
   "entertainment": [
@@ -172,25 +153,6 @@
       "vegan": true,
       "website": "https://d20tavern.com/",
       "photo": "https://bloximages.newyork1.vip.townnews.com/dentonrc.com/content/tncms/assets/v3/editorial/c/47/c4738b58-ef70-54f4-8662-c0b33a529a0e/62a3897623eda.image.jpg?resize=400%2C300"
-    },
-    {
-      "type": "",
-      "owner": "sdsd",
-      "name": "Verity Carlos",
-      "email": "collins.verity@gmail.com",
-      "addressline1": "asdf  ",
-      "addressline2": "ddddddd",
-      "phone": "2343535",
-      "website": "adfgafg",
-      "photo": "https://cdn.wccftech.com/wp-content/uploads/2019/04/Wizards_of_the_Coast_logo.jpg",
-      "bio": "We sell magic cards!",
-      "specialty": "Magic the Gathering",
-      "alcohol": "",
-      "dogs": "",
-      "patio": "",
-      "vegetarian": "",
-      "vegan": "",
-      "id": 5
     }
   ],
   "grocery": [
@@ -269,25 +231,6 @@
       "vegan": true,
       "website": "https://mashupmarketandgrocery.com/",
       "photo": "https://assets.simpleviewinc.com/simpleview/image/upload/crm/denton/Mashup-Market_20CF242C-5056-A348-3A9081B218596BEC-20cf23255056a34_20cf24c2-5056-a348-3a611050a5e4001e.jpg"
-    },
-    {
-      "type": "",
-      "owner": "Gian",
-      "name": "Verity Carlos",
-      "email": "collins.verity@gmail.com",
-      "addressline1": "asdf  ",
-      "addressline2": "Seattle, WA 50741",
-      "phone": "940-456-1234",
-      "website": "https://company.wizards.com/en",
-      "photo": "https://cdn.wccftech.com/wp-content/uploads/2019/04/Wizards_of_the_Coast_logo.jpg",
-      "bio": "We sell magic cards!",
-      "specialty": "Magic the Gathering",
-      "alcohol": "",
-      "dogs": "",
-      "patio": "",
-      "vegetarian": "",
-      "vegan": "",
-      "id": 5
     }
   ]
 }

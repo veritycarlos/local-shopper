@@ -2,7 +2,6 @@ import './Form.css'
 import React, { useState, useEffect, useCallback } from 'react'
 
 function Form () {
-    const [check, setCheck] = useState(false);
     const [values, setValues] = useState({
         type:"",
         owner: "",
