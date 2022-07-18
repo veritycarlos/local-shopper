@@ -1,4 +1,4 @@
-import { Dining } from '@mui/icons-material';
+import './Form.css'
 import React, { useState, useEffect, useCallback } from 'react'
 
 function Form () {
@@ -61,8 +61,8 @@ function Form () {
     }
 
     return (
-        <div className='form-container'>           
-            <h1>Fill out this form and submit to add your local buisness to our site!</h1>
+        <div className='formcontainer'>           
+            <h1>Fill out this form and submit to add your local buisness to our site.</h1>
                 <form className='register-form' onSubmit={handleSubmit}>
                     <br/>
                     Select Your Buisness Type
