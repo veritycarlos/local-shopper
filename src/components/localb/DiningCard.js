@@ -21,22 +21,24 @@ function DiningCard({ diner }) {
         <Typography gutterBottom variant="h5" component="div">
           { diner.buisnessName }
         </Typography>
-        <Typography variant="body2" color="text.secondary">
-            <p>{diner.cuisine}</p>
-            <p>{diner.address}</p>
-            <p>{diner.phone}</p>
-            <p> { diner.alcohol ?  "🥂" : null } 
-            {diner.patio ? "🪑":null}
-            { diner.dogs ? "🐕" : null } </p>
-            <p>
-            { diner.vegan ? "Ⓥ" : null }
-            { diner.vegetarian ? "🧀" : null }
-            </p>
+        <Typography variant="body2" color="text.secondary" fontSize={15}>
+            {diner.cuisine}<br/>
+            {diner.addressline1}<br/>
+            {diner.addressline2}<br/>
+            {diner.phone}<br/>
         </Typography>
+        <Typography variant="body2" fontSize={23}>   
+            { diner.alcohol ?  "🥂" : null } 
+            { diner.patio ? "🪑":null }
+            { diner.dogs ? "🐕" : null }
+            { diner.vegan ? "🌱" : null }
+            { diner.vegetarian ? "🧀" : null }
+        </Typography>     
+        
       </CardContent>
-      <CardActions>
-        <Button size="small">{diner.website}</Button>
-        <Button size="small">Learn More</Button>
+      <CardActions >
+        <Button size="large"><a href={diner.website} target="_blank">website</a></Button>
+        <Button size="large">Learn More</Button>
       </CardActions>
     </Card>
   );
