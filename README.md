@@ -6,7 +6,7 @@ This website provides information about locally owned buisnesses in Denton, TX.
 
 Click through the NavBar tabs to see cards displaying details about local buisnesses. Click the button at the top of the card page to submit your buisness  to the site. 
 
-## GigHub Repo
+## GitHub Repo
 
 Provided here is a link to the GitHub repository: 
 [GitHub_URL](https://github.com/veritycarlos/local-shopper)
